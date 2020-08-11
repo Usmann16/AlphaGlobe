@@ -68,6 +68,9 @@
              
               <li><a href="scholars_List.html">Scholarships</a></li>
               <li><a href="contact.html">Contact</a></li>
+              {% if user.is_authenticated %}
+              <li><a href="profile.html">Profile</a></li>
+              {% endif %}
               
               <li class="d-lg-none"><a href="login.html">LogIn</a></li>
             </ul>
@@ -97,10 +100,10 @@
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-12">
-            <div class="mb-5 text-center">
+            <div class="mb-5 text-center"><br><br><br>
               <h1 class="text-white font-weight-bold" style="font-size:40px">Experience you can trust, services you can count on.</h1>
               {% if user.is_authenticated %}
-              <p>Welcome {{user.username|upper}}</p>
+              <p>Welcome {{user.first_name|upper}}</p>
               {% endif %}
             </div>
             <form method="post" class="search-jobs-form" >

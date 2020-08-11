@@ -82,10 +82,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-7">
-            <h1 class="text-white font-weight-bold">Login</h1>
+            <h1 class="text-white font-weight-bold" style="font-size:30px;">{{user.first_name|upper}}</h1>
             <div class="custom-breadcrumbs">
               <a href="#">Home</a> <span class="mx-2 slash">/</span>
-              <span class="text-white"><strong>Log In</strong></span>
+              <span class="text-white"><strong>Profile</strong></span>
             </div>
           </div>
         </div>
@@ -106,28 +106,36 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <h2 class="mb-4">Reset your password</h2>
-            <form method="post" action="passwordConfirm.html" class="p-4 border rounded">
+            <form method="post" action="profile.html" class="p-4 border rounded">
              {% csrf_token %}
 
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
-                  <labeel class="text-black" >Password</labeel>
-                  <input type="password" name="pass1" class="form-control" placeholder="Password" required>
+                  <label class="text-black" >Personal Information</label><br>
+                  <label style="display:inline-block "> Username:&emsp;&emsp;&emsp;{{user.username}}</label><br>
+                  <label style="display:inline-block "> FirstName:&emsp;&emsp;&emsp;{{user.first_name}}</label><br>
+                  <label style="display:inline-block "> LastName:&emsp;&emsp;&emsp; {{user.last_name}}</label><br>
+                  <label style="display:inline-block "> Email:&emsp;&emsp;&emsp;&emsp;&emsp; {{user.email}}</label>
                 </div>
               </div>
-                <div class="row form-group">
+              <div class="row form-group mb-4">
                 <div class="col-md-12 mb-3 mb-md-0">
-                  <labeel class="text-black" >Confirm Password</labeel>
-                  <input type="password" name="pass2" class="form-control" placeholder="Confirm Password"  required>
+                  <label class="text-black" >Important Dates</label><br>
+                  <label style="display:inline-block "> Last Login:&emsp;&emsp;&emsp;&nbsp; {{user.last_login}}</label><br>
+                  <label style="display:inline-block "> Date joined:&emsp;&emsp;&emsp;{{user.date_joined}}</label><br>
+
                 </div>
               </div>
+
               <div class="row form-group">
                 <div class="col-md-6">
-                  <input type="submit" value="Reset password" class="btn px-4 btn-primary text-white">
+                  <input type="submit" value="Delete" name="delete" class="btn px-4 btn-primary text-white">
                 </div>
 
               </div>
+
+
+
             </form>
           </div>
         </div>

@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="777cb8d0-2e60-4715-9f77-0f85bbaea856" name="Default" comment="" />
+    <list default="true" id="777cb8d0-2e60-4715-9f77-0f85bbaea856" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/mysite/templates/mysite/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaglobe.db" beforeDir="false" afterPath="$PROJECT_DIR$/alphaglobe.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/templates/mysite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/mysite/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/templates/mysite/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/mysite/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/templates/mysite/passwordConfirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/mysite/passwordConfirm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/templates/mysite/resetPassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/mysite/resetPassword.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/views.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +187,19 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Front end for the Homepage and Portfolio page" />

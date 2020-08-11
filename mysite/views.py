@@ -444,8 +444,7 @@ def Contact(request):
                 cont = Contacts.objects.create(firstname=firstname, lastname=lastname, email=request.user.email, subjects=subject, message=message)
                 cont.save
                 info = 'Message sent successfully.!'
-                return render(request, 'mysite/contact.html', {'info': info})
-        else:
+
 
             info = 'First you have to login...'
             return render(request, 'mysite/contact.html', {'info':info})
@@ -456,6 +455,15 @@ def Contact(request):
 
 def Detail(request):
     return render(request, 'mysite/Detail.html')
+
+def profile(request):
+    if request.method == 'POST':
+        if request.user.is_authenticated:
+            email = request.user.email
+            User.objects.filter(email=email).delete()
+            return render(request, 'mysite/index.html')
+    else:
+         return render(request, 'mysite/profile.html')
 
 def PostScholarship(request):
     if request.method == 'POST':

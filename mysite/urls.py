@@ -19,6 +19,7 @@ urlpatterns = [
     path('Study.html', views.study, name='study'),
     path('contact.html', views.Contact, name='contact'),
     path('Detail.html', views.Detail, name='Detail'),
+    path('profile.html', views.profile, name='profile'),
     path('resetPassword.html', views.resetpassword, name='resetPassword'),
     path('passwordConfirm.html', views.passwordConfirm, name='passwordConfirm'),
     path('PostScholarship.html', views.PostScholarship, name='PostScholarship'),
